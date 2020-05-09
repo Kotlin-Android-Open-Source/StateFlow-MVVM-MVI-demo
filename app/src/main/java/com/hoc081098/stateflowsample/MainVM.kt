@@ -20,6 +20,7 @@ class MainVM : ViewModel() {
   private val actionChannel = BroadcastChannel<MainAction>(Channel.BUFFERED)
 
   val stateFlow: StateFlow<MainState>
+
   suspend fun process(action: MainAction) = actionChannel.send(action)
 
   init {
