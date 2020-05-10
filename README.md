@@ -1,5 +1,5 @@
 # StateFlow-demo
-## Kotlin `StateFlow` example
+## Kotlin `StateFlow` sample
 Using StateFlow as LiveData
 
 | Idle state | Running state | Paused state |
