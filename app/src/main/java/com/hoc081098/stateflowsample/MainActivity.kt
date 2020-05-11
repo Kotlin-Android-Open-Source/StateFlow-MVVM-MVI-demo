@@ -12,12 +12,13 @@ import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.FlowPreview
 import kotlinx.coroutines.channels.awaitClose
 import kotlinx.coroutines.flow.*
+import kotlin.LazyThreadSafetyMode.NONE
 
 @ExperimentalCoroutinesApi
 @FlowPreview
 class MainActivity : AppCompatActivity() {
   private val vm by viewModels<MainVM>()
-  private val binding by lazy { ActivityMainBinding.inflate(layoutInflater) }
+  private val binding by lazy(NONE) { ActivityMainBinding.inflate(layoutInflater) }
 
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
