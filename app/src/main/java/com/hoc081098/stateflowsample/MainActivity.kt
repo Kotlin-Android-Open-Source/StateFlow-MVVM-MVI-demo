@@ -23,10 +23,12 @@ class MainActivity : AppCompatActivity() {
     super.onCreate(savedInstanceState)
     setContentView(binding.root)
 
-    vm.stateFlow
-      .onEach { render(it) }
-      .catch { }
-      .launchIn(lifecycleScope)
+    lifecycleScope.launchWhenStarted {
+      vm.stateFlow
+        .onEach { render(it) }
+        .catch { }
+        .collect()
+    }
 
     actionFlow()
       .onEach { vm.process(it) }
