@@ -17,7 +17,7 @@ class MainVM : ViewModel() {
     const val MAX_SECONDS = 10
   }
 
-  private val actionChannel = BroadcastChannel<MainAction>(Channel.BUFFERED)
+  private val actionChannel = Channel<MainAction>(Channel.BUFFERED)
 
   val stateFlow: StateFlow<MainState>
 
@@ -31,7 +31,7 @@ class MainVM : ViewModel() {
     var resume = 0L
 
     actionChannel
-      .asFlow()
+      .consumeAsFlow()
       .onEach { action ->
         when (action) {
           MainAction.START -> Unit
@@ -70,7 +70,7 @@ class MainVM : ViewModel() {
       }
       .onEach { stateFlow.value = it }
       .onEach { Log.d("###", "Main state: $it") }
-      .catch { }
+      .catch { Log.d("###", "Exception: $it") }
       .launchIn(viewModelScope)
   }
 }

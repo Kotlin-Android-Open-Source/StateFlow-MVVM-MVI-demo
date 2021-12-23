@@ -74,10 +74,9 @@ class MainActivity : AppCompatActivity() {
 }
 
 @CheckResult
-@ExperimentalCoroutinesApi
 fun View.clicks(): Flow<Unit> {
   return callbackFlow {
-    setOnClickListener { offer(Unit) }
+    setOnClickListener { trySend(Unit) }
     awaitClose { setOnClickListener(null) }
   }
 }
