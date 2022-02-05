@@ -43,7 +43,7 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
 
     // viewModels
-    implementation "androidx.fragment:fragment-ktx:1.4.0"
+    implementation "androidx.fragment:fragment-ktx:1.4.1"
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
