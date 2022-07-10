@@ -10,6 +10,12 @@ Using StateFlow as LiveData
 [![License: MIT](https://img.shields.io/badge/License-MIT-purple.svg)](https://opensource.org/licenses/MIT)
 
 
+## Buy me a coffee
+Liked some of my work? Buy me a coffee (or more likely a beer)
+
+[!["Buy Me A Coffee"](https://cdn.buymeacoffee.com/buttons/default-orange.png)](https://www.buymeacoffee.com/hoc081098)
+
+
 | Idle state | Running state | Paused state |
 | --------------- | ---------------- | ------------ |
 | <img src="Screenshot_01.png" height="480" /> | <img src="Screenshot_02.png" height="480"> | <img src="Screenshot_03.png" height="480"> |
