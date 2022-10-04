@@ -11,7 +11,7 @@ class MainRenderer(private val binding: ActivityMainBinding) {
   fun actionFlow(): Flow<MainAction> = merge(
     binding.buttonStart.clicks().mapTo(MainAction.START),
     binding.buttonPause.clicks().mapTo(MainAction.PAUSE),
-    binding.buttonReset.clicks().mapTo(MainAction.RESET),
+    binding.buttonReset.clicks().mapTo(MainAction.RESET)
   )
 
   fun render(state: MainState) {

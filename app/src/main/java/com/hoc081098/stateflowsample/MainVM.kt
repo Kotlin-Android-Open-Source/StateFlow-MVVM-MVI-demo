@@ -6,6 +6,7 @@ import androidx.lifecycle.viewModelScope
 import com.hoc081098.flowext.concatWith
 import com.hoc081098.flowext.interval
 import com.hoc081098.stateflowsample.utils.selfReferenced
+import kotlin.time.Duration.Companion.seconds
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.FlowPreview
 import kotlinx.coroutines.flow.Flow
@@ -20,7 +21,6 @@ import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.flow.takeWhile
 import kotlinx.coroutines.launch
-import kotlin.time.Duration.Companion.seconds
 
 @FlowPreview
 @ExperimentalCoroutinesApi
@@ -38,7 +38,7 @@ class MainVM : ViewModel() {
               .map {
                 MainState(
                   seconds = it,
-                  watchState = MainState.WatchState.RUNNING,
+                  watchState = MainState.WatchState.RUNNING
                 )
               }
               .concatWith(flowOf(initialState))

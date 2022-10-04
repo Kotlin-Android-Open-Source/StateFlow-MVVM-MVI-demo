@@ -14,20 +14,20 @@ import kotlinx.coroutines.launch
   replaceWith = ReplaceWith(
     "this.collectInViewLifecycle(owner, minActiveState, action)"
   ),
-  level = DeprecationLevel.WARNING,
+  level = DeprecationLevel.WARNING
 )
 @Suppress("unused")
 inline fun <T> Flow<T>.collectIn(
   owner: Fragment,
   minActiveState: Lifecycle.State = Lifecycle.State.STARTED,
-  crossinline action: suspend (value: T) -> Unit,
+  crossinline action: suspend (value: T) -> Unit
 ) = collectIn(owner as LifecycleOwner, minActiveState, action)
 
 @Suppress("unused")
 inline fun <T> Flow<T>.collectIn(
   owner: LifecycleOwner,
   minActiveState: Lifecycle.State = Lifecycle.State.STARTED,
-  crossinline action: suspend (value: T) -> Unit,
+  crossinline action: suspend (value: T) -> Unit
 ): Job = owner.lifecycleScope.launch {
   owner.repeatOnLifecycle(state = minActiveState) { collect { action(it) } }
 }
@@ -40,9 +40,9 @@ inline fun <T> Flow<T>.collectIn(
 inline fun <T> Flow<T>.collectInViewLifecycle(
   fragment: Fragment,
   minActiveState: Lifecycle.State = Lifecycle.State.STARTED,
-  crossinline action: suspend (value: T) -> Unit,
+  crossinline action: suspend (value: T) -> Unit
 ): Job = collectIn(
   owner = fragment.viewLifecycleOwner,
   minActiveState = minActiveState,
-  action = action,
+  action = action
 )
