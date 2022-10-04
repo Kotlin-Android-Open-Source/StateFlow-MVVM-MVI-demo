@@ -1,0 +1,30 @@
+[versions]
+androidGradlePlugin = "7.3.0"
+kotlin = "1.7.20"
+kotlinxCoroutines = "1.6.4"
+androidxAppCompat = "1.5.1"
+androidxCore = "1.9.0"
+androidMaterial = "1.6.1"
+androidxConstraintLayout = "2.1.4"
+androidxFragment = "1.5.3"
+hoc081098FlowExt = "0.4.0"
+androidxLifecycle = "2.5.1"
+
+[libraries]
+kotlin-stdlib = { module = "org.jetbrains.kotlin:kotlin-stdlib-jdk8", version.ref = "kotlin" }
+kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinxCoroutines" }
+kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "kotlinxCoroutines" }
+androidx-appcompat = { module = "androidx.appcompat:appcompat", version.ref = "androidxAppCompat" }
+androidx-core-ktx = { module = "androidx.core:core-ktx", version.ref = "androidxCore" }
+androidx-constraintlayout = { module = "androidx.constraintlayout:constraintlayout", version.ref = "androidxConstraintLayout" }
+androidx-fragment = { module = "androidx.fragment:fragment-ktx", version.ref = "androidxFragment" }
+androidx-lifecycle-viewmodel-ktx = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "androidxLifecycle" }
+androidx-lifecycle-runtime-ktx = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "androidxLifecycle" }
+android-material= { module = "com.google.android.material:material", version.ref = "androidMaterial" }
+hoc081098-flowext = { module = "io.github.hoc081098:FlowExt", version.ref = "hoc081098FlowExt" }
+
+[plugins]
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
+android-library = { id = "com.android.library", version.ref = "androidGradlePlugin" }
