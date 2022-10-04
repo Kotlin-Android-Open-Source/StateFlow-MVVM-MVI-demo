@@ -1,4 +1,4 @@
-name: Build CI
+name: Ktlint CI
 
 on:
   push:
@@ -24,13 +24,7 @@ jobs:
       - name: Make gradlew executable
         run: chmod +x ./gradlew
 
-      - name: Build debug APK
+      - name: Check code style
         uses: gradle/gradle-build-action@v2
         with:
-          arguments: assembleDebug --warning-mode all --stacktrace
-
-      - name: Upload APK
-        uses: actions/upload-artifact@v3
-        with:
-          name: app-debug
-          path: app/build/outputs/apk/debug/app-debug.apk
+          arguments: lintKotlin --warning-mode all --stacktrace
