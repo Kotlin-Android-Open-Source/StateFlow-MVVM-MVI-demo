@@ -3,6 +3,7 @@
 Using StateFlow as LiveData
 
 [![Build CI](https://github.com/Kotlin-Android-Open-Source/StateFlow-demo/actions/workflows/build.yml/badge.svg)](https://github.com/Kotlin-Android-Open-Source/StateFlow-demo/actions/workflows/build.yml)
+[![Ktlint CI](https://github.com/Kotlin-Android-Open-Source/StateFlow-MVVM-MVI-demo/actions/workflows/ktlint.yml/badge.svg)](https://github.com/Kotlin-Android-Open-Source/StateFlow-MVVM-MVI-demo/actions/workflows/ktlint.yml)
 [![Validate Gradle Wrapper](https://github.com/Kotlin-Android-Open-Source/StateFlow-demo/actions/workflows/gradle-wrapper-validation.yml/badge.svg)](https://github.com/Kotlin-Android-Open-Source/StateFlow-demo/actions/workflows/gradle-wrapper-validation.yml)
 [![API](https://img.shields.io/badge/API-23%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=23)
 [![Kotlin](https://img.shields.io/badge/kotlin-1.7.20-orange.svg?logo=kotlin)](http://kotlinlang.org)
