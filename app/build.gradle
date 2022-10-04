@@ -12,8 +12,12 @@ android {
         applicationId "com.hoc081098.stateflowsample"
         minSdkVersion 23
         targetSdkVersion 33
-        versionCode 1
-        versionName "1.0.0"
+
+        final MAJOR = 1
+        final MINOR = 0
+        final PATCH = 0
+        versionCode MAJOR * 10_000 + MINOR * 100 + PATCH
+        versionName "$MAJOR.$MINOR.$PATCH"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
