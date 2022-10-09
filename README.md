@@ -1,6 +1,8 @@
 # StateFlow-demo
 ## Kotlin `StateFlow` sample
-Using StateFlow as LiveData
+
+ - Using StateFlow as LiveData
+ - Stop watch MVI/MVVM, Reactive Coroutines Flow
 
 [![Build CI](https://github.com/Kotlin-Android-Open-Source/StateFlow-demo/actions/workflows/build.yml/badge.svg)](https://github.com/Kotlin-Android-Open-Source/StateFlow-demo/actions/workflows/build.yml)
 [![Ktlint CI](https://github.com/Kotlin-Android-Open-Source/StateFlow-MVVM-MVI-demo/actions/workflows/ktlint.yml/badge.svg)](https://github.com/Kotlin-Android-Open-Source/StateFlow-MVVM-MVI-demo/actions/workflows/ktlint.yml)
