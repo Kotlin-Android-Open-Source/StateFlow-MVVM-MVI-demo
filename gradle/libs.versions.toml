@@ -1,5 +1,5 @@
 [versions]
-androidGradlePlugin = "7.4.0"
+androidGradlePlugin = "7.4.1"
 kotlin = "1.8.0"
 jmailenKotlinter = "3.13.0"
 kotlinxCoroutines = "1.6.4"
