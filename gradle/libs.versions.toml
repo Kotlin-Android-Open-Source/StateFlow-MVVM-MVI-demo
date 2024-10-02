@@ -1,15 +1,15 @@
 [versions]
-androidGradlePlugin = "7.4.1"
-kotlin = "1.8.0"
-jmailenKotlinter = "3.13.0"
-kotlinxCoroutines = "1.6.4"
-androidxAppCompat = "1.6.0"
-androidxCore = "1.9.0"
-androidMaterial = "1.8.0"
+androidGradlePlugin = "7.4.2"
+kotlin = "1.9.25"
+jmailenKotlinter = "3.16.0"
+kotlinxCoroutines = "1.9.0"
+androidxAppCompat = "1.7.0"
+androidxCore = "1.13.1"
+androidMaterial = "1.12.0"
 androidxConstraintLayout = "2.1.4"
-androidxFragment = "1.5.5"
-hoc081098FlowExt = "0.5.0"
-androidxLifecycle = "2.5.1"
+androidxFragment = "1.8.4"
+hoc081098FlowExt = "0.8.1"
+androidxLifecycle = "2.8.6"
 
 [libraries]
 kotlin-stdlib = { module = "org.jetbrains.kotlin:kotlin-stdlib-jdk8", version.ref = "kotlin" }
