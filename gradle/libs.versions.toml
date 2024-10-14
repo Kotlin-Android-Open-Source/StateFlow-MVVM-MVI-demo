@@ -1,14 +1,14 @@
 [versions]
-androidGradlePlugin = "7.4.1"
-kotlin = "1.8.0"
-jmailenKotlinter = "3.13.0"
+androidGradlePlugin = "8.7.1"
+kotlin = "2.0.21"
+jmailenKotlinter = "4.4.1"
 kotlinxCoroutines = "1.6.4"
 androidxAppCompat = "1.6.0"
 androidxCore = "1.9.0"
 androidMaterial = "1.8.0"
 androidxConstraintLayout = "2.1.4"
 androidxFragment = "1.5.5"
-hoc081098FlowExt = "0.5.0"
+hoc081098FlowExt = "1.0.0"
 androidxLifecycle = "2.5.1"
 
 [libraries]
